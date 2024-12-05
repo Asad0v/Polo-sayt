@@ -1,0 +1,228 @@
+header{
+    text-align: center;
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff, #fff);
+    padding: 35px 0 25px 0;
+}
+#logo img{ width: 50%;}
+
+#menu li{
+    color: #b7b7b7;
+    font: .7em Tahoma, sans-serif;
+    padding: 0 10px 7px 10px;
+}
+#menu li a{
+    color: #666;
+    display: block;
+    font: bold .9rem Georgia, serif;
+    text-transform: uppercase;
+
+}
+main{
+    background:  url('mainbg.jpg') repeat-x;
+    padding: 20px 0 0 0;
+}
+.col{
+    padding: 10px;
+}
+article h2{
+    font: 1.3em  Georgia, serif;
+    color: #11719e;
+}
+article h6{
+    font-size: .75em Helvetica, sans-serif;
+    color: #8c8c8c;
+}
+
+.row article img{
+    background-color: #f3f3f3;
+    padding: 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    width: 100%;
+    margin: 17px 0 0 0;
+}
+.row article p{
+    font: .8em/1.5 Helvetica, sans-serif;
+    text-align: justify;
+}
+.btn{
+    display: inline-block;
+    width: 163px;
+    text-align: left;
+    padding: 8px 12px;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+.btn span{
+    float: right;
+}
+.btn1{
+    color: #016999;
+    font: .75em Helvetica, sans-serif;
+    border: 1px solid #d8d8d8;
+    background: linear-gradient(#e8e8e8, #f6f6f6, #ebebeb, #eaeaea, #e8e8e8);
+}
+.btn2{
+    display: block;
+    margin: initial;
+    margin: 10px 0px;
+    border: 1px solid #004a80;
+    font: .75em Georgia, serif;
+    color: #fff;
+    background: linear-gradient(to right, #31669b, #4b83bd, #326598, #306193);
+}
+.col input{
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    font: .6em Verdana, sans-serif ;
+    margin: 15px 0 0 0;
+}
+.col textarea{
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    font: .6em Verdana, sans-serif ;
+    margin: 15px 0 0 0;
+}
+.row{
+    padding: 25px 0;
+}
+h3{
+    font: bold 1.1em Georgia, serif;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    margin: 20px 0 5px ;
+    padding: 0 0 5px 0 ;
+}
+.text{
+    max-width: 300px;
+    font: 0.75em Helvetica, sans-serif;
+    color: #444;
+    font-family: "Helvetica";
+    margin: 15px 0 0 0;
+}
+.col .png{
+    margin-top: 7px;
+}
+.col .png a{
+   font-size: 50px;
+   color: #aaa;
+
+}  
+/* .news::after{
+    display: table;
+        content: '';
+        clear: both;
+} */
+.news img{
+    padding: 6px ;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border-color: #cfcfcf;
+    /* float: left;   */
+    /* display: inline-block; */
+}
+.news{
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 10px 0;
+    display: flex;
+    gap: 1%;
+}
+
+#slider{
+    height: 345px;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    background: url(slider1.jpg) center/cover;
+    box-shadow: 0 10px 10px #9b9b9b;
+}
+h1{
+    text-align: center;
+    /* color: #000; */
+    font: bold 1.5em Georgia, serif;
+    padding: 20px 0 14px 0;
+}
+hr{
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+    footer{
+        height: 183px;
+        background-color: #333 ;
+        border-top: 10px solid #4c4c4c;
+    }
+    footer p{
+        color: white;
+        margin: 20px 10px;
+    }
+
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 940px;
+        margin: auto;
+    }
+    header{
+       text-align: initial;
+    }
+    #logo img{ width: 25%;}
+    #menu{
+        float: right;
+        padding: 22px 0 0 0;
+    }
+    #menu li{
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+    }
+    .news img{
+        display: flex;
+        justify-content: stretch;
+    }
+    .news{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        width: 100%;
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .ftleft{
+        width: 50%;
+        float: left;
+    }
+    .ftright{
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .col {
+        width: 33.33%;
+        float: left;
+    }
+    .col .png .fa-square-rss:hover{
+        color: #EB7818;
+    }
+    .col .png .fa-square-facebook:hover{
+        color: #3B579D;
+    }
+    .col .png .fa-linkedin:hover{
+        color: #3B579D;
+    }
+    .col .png .fa-youtube:hover{
+        color: #FF0000;
+    }
+    .col .png .fa-square-x-twitter:hover{
+        color: #000;
+    }
+}
